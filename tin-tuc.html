@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Tin Tức - Dừa Bến Tre</title>
+</head>
+
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="Logo Dừa Bến Tre" height="50">
+                    <span class="brand-text ms-2">Dừa Bến Tre</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="san-pham.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- News Hero Section -->
+    <section class="news-hero" style="margin-bottom: 70px;">
+        <div class="container">
+            <h1 class="text-center" data-aos="fade-up">Tin Tức & Câu Chuyện</h1>
+
+            <p class="text-center lead" data-aos="fade-up" data-aos-delay="200">
+                Cập nhật thông tin mới nhất về ngành dừa và những câu chuyện thú vị
+            </p>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Market News -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="news-category">
+                        <h2 style="color: #1da1f2; margin-bottom: 20px;">Thị Trường Dừa</h2>
+                        <div class="news-card">
+                            <img src="images/sp1.jpg" alt="Thị trường dừa">
+                            <div class="news-content">
+                                <h3>Xuất khẩu dừa tăng mạnh trong quý I/2024</h3>
+                                <p>Giá trị xuất khẩu các sản phẩm từ dừa đạt 147 triệu USD, tăng 23,5% so với cùng kỳ
+                                    năm trước...</p>
+                                <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#marketModal">Đọc
+                                    tiếp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cooking Recipes -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-category">
+                        <h2 style="color: #1da1f2; margin-bottom: 20px;">Món Ngon Từ Dừa</h2>
+                        <div class="news-card">
+                            <img src="images/sp2.jpg" alt="Món ngon từ dừa">
+                            <div class="news-content">
+                                <h3>5 Món Tráng Miệng Từ Dừa Không Thể Bỏ Qua</h3>
+                                <p>Khám phá những công thức làm bánh và chè dừa truyền thống được yêu thích...</p>
+                                <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#recipeModal">Xem
+                                    công thức</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Farmer Stories -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-category">
+                        <h2 style="color: #1da1f2; margin-bottom: 20px;">Câu Chuyện Người Trồng</h2>
+                        <div class="news-card">
+                            <img src="images/sp3.jpg" alt="Người trồng dừa">
+                            <div class="news-content">
+                                <h3>Người Giữ Hồn Dừa Bến Tre</h3>
+                                <p>Gặp gỡ ông Sáu Thành - người 40 năm gắn bó với nghề trồng dừa organic...</p>
+                                <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#farmerModal">Đọc
+                                    câu chuyện</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Bài Viết Nổi Bật</h2>
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="article-card">
+                        <img src="images/xudua.jpg" alt="Du lịch dừa">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 15/03/2024</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h3>Du Lịch Xứ Dừa - Trải Nghiệm Không Thể Bỏ Lỡ</h3>
+                            <p>Khám phá tour du lịch sinh thái vườn dừa, trải nghiệm làm kẹo dừa truyền thống...</p>
+                            <a href="#" class="btn-read" data-bs-toggle="modal" data-bs-target="#tourModal">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="article-card">
+                        <img src="images/sp5.jpg" alt="Nghề thủ công">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 10/03/2024</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h3>Nghề Thủ Công Từ Dừa - Giữ Gìn Di Sản</h3>
+                            <p>Tìm hiểu về làng nghề đan lát từ lá dừa, sản xuất than thiêu kết từ gáo dừa...</p>
+                            <a href="#" class="btn-read" data-bs-toggle="modal" data-bs-target="#craftModal">Đọc
+                                thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Đăng Ký Nhận Tin</h2>
+                <p>Nhận thông tin mới nhất về ngành dừa và các công thức chế biến</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn">
+                    <button type="submit">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-info">
+                            <div class="footer-logo">
+                                <img src="images/logo.png" alt="Logo Dừa Bến Tre" height="60">
+                                <h3>Dừa Bến Tre</h3>
+                            </div>
+                            <p>Chuyên cung cấp dừa khô xuất khẩu chất lượng cao, đảm bảo uy tín và giá cả cạnh tranh
+                                trên thị trường.</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/share/1WTPz3mC3i/" class="facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/vrinz.vie/profilecard/?igsh=MXhmdTlqNnkxZ3Q3bA=="
+                                    class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://youtube.com/@vykieu4125?si=Dp_WaKra5_22Q3Ys" class="youtube"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-contact">
+                            <h4>Thông Tin Liên Hệ</h4>
+                            <div class="contact-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>223/AB, T.T Tiệm Tôm, Ba Tri, Bến Tre</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p>0814375022</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Vrinz.n07@gmail.com </p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Thứ 2 - Thứ 7: 8:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-map">
+                            <h4>Vị Trí Của Chúng Tôi</h4>
+                            <div class="map-wrapper">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62820.79581017576!2d106.3343513092231!3d10.237391859237828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa8f5e2e8bd09%3A0x9d5fd18ce4fa56bb!2zVHAuIELhur9uIFRyZSwgQuG6v24gVHJlLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1738643233012!5m2!1svi!2s"
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2024 Dừa Bến Tre. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-links">
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal Market News -->
+    <div class="modal fade" id="marketModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xuất khẩu dừa tăng mạnh trong quý I/2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/sp1.jpg" alt="Thị trường dừa" class="img-fluid mb-4">
+                    <div class="article-meta mb-3">
+                        <span><i class="fas fa-calendar"></i> 20/03/2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <p>Theo số liệu thống kê mới nhất, giá trị xuất khẩu các sản phẩm từ dừa của Việt Nam trong quý
+                        I/2024 đã đạt 147 triệu USD, tăng 23,5% so với cùng kỳ năm trước. Đây là tín hiệu tích cực cho
+                        ngành dừa Việt Nam...</p>
+                    <p>Các thị trường xuất khẩu chính bao gồm:</p>
+                    <ul>
+                        <li>Trung Quốc: 45%</li>
+                        <li>EU: 25%</li>
+                        <li>Mỹ: 20%</li>
+                        <li>Các thị trường khác: 10%</li>
+                    </ul>
+                    <p>Dự báo trong những tháng tới, xuất khẩu dừa sẽ tiếp tục tăng trưởng mạnh nhờ nhu cầu tăng cao từ
+                        các thị trường quốc tế...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cooking Recipe -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">5 Món Tráng Miệng Từ Dừa Không Thể Bỏ Qua</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/sp2.jpg" alt="Món ngon từ dừa" class="img-fluid mb-4">
+                    <div class="article-meta mb-3">
+                        <span><i class="fas fa-calendar"></i> 18/03/2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h6>1. Chè Dừa Non</h6>
+                    <p>Nguyên liệu: Dừa non, đường, bột năng, lá dứa...</p>
+                    <p>Cách làm: ...</p>
+
+                    <h6>2. Bánh Flan Dừa</h6>
+                    <p>Nguyên liệu: Nước cốt dừa, trứng gà, đường, sữa...</p>
+                    <p>Cách làm: ...</p>
+
+                    <!-- Thêm các công thức khác -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Farmer Story -->
+    <div class="modal fade" id="farmerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Người Giữ Hồn Dừa Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/sp3.jpg" alt="Người trồng dừa" class="img-fluid mb-4">
+                    <div class="article-meta mb-3">
+                        <span><i class="fas fa-calendar"></i> 15/03/2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <p>Ông Sáu Thành - người nông dân với 40 năm kinh nghiệm trồng dừa organic tại Bến Tre...</p>
+                    <p>Câu chuyện về hành trình gắn bó với nghề trồng dừa và những kinh nghiệm quý báu...</p>
+                    <blockquote class="farmer-quote">
+                        "Dừa không chỉ là cây trồng, mà còn là di sản văn hóa của người dân Bến Tre"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tour Story -->
+    <div class="modal fade" id="tourModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Du Lịch Xứ Dừa - Trải Nghiệm Không Thể Bỏ Lỡ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/xudua.jpg" alt="Du lịch dừa" class="img-fluid mb-4">
+                    <div class="article-meta mb-3">
+                        <span><i class="fas fa-calendar"></i> 15/03/2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+
+                    </div>
+                    <h6>Tour Du Lịch Sinh Thái Vườn Dừa</h6>
+                    <p>Khám phá vẻ đẹp của những vườn dừa xanh mát tại Bến Tre, nơi được mệnh danh là "xứ dừa". Du khách
+                        sẽ được:</p>
+                    <ul>
+                        <li>Đi thuyền trên sông ngắm cảnh vườn dừa hai bên bờ</li>
+                        <li>Tham quan quy trình làm kẹo dừa truyền thống</li>
+                        <li>Thưởng thức các món ăn đặc sản từ dừa</li>
+                        <li>Trải nghiệm làm các sản phẩm thủ công từ dừa</li>
+                    </ul>
+                    <h6>Điểm Nhấn Tour</h6>
+                    <p>Đặc biệt, du khách sẽ được tham gia workshop làm kẹo dừa, học cách tạo ra những viên kẹo dừa thơm
+                        ngon theo công thức truyền thống...</p>
+                    <p>Tour còn bao gồm các hoạt động văn hóa đặc sắc như:</p>
+                    <ul>
+                        <li>Thưởng thức đờn ca tài tử Nam Bộ</li>
+                        <li>Tham quan làng nghề truyền thống</li>
+                        <li>Trải nghiệm cuộc sống của người dân địa phương</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Craft Story -->
+    <div class="modal fade" id="craftModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nghề Thủ Công Từ Dừa - Giữ Gìn Di Sản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/sp5.jpg" alt="Nghề thủ công" class="img-fluid mb-4">
+                    <div class="article-meta mb-3">
+                        <span><i class="fas fa-calendar"></i> 10/03/2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h6>Làng Nghề Truyền Thống</h6>
+                    <p>Bến Tre không chỉ nổi tiếng với những vườn dừa xanh mát mà còn là nơi lưu giữ nhiều làng nghề thủ
+                        công truyền thống từ cây dừa:</p>
+                    <ul>
+                        <li>Nghề đan lát từ lá dừa</li>
+                        <li>Sản xuất than thiêu kết từ gáo dừa</li>
+                        <li>Chế tác đồ mỹ nghệ từ gỗ dừa</li>
+                        <li>Dệt thảm từ xơ dừa</li>
+                    </ul>
+                    <h6>Giá Trị Văn Hóa</h6>
+                    <p>Những làng nghề này không chỉ tạo ra sinh kế cho người dân địa phương mà còn góp phần bảo tồn và
+                        phát huy các giá trị văn hóa truyền thống...</p>
+                    <blockquote class="farmer-quote">
+                        "Mỗi sản phẩm thủ công từ dừa đều chứa đựng tâm huyết và kỹ năng được truyền từ đời này sang đời
+                        khác"
+                    </blockquote>
+                    <p>Hiện nay, các sản phẩm thủ công từ dừa của Bến Tre không chỉ được tiêu thụ trong nước mà còn xuất
+                        khẩu ra nhiều nước trên thế giới...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Messenger Icon -->
+    <a href="https://www.facebook.com/share/1BQx5rauJ3/" target="_blank" class="messenger-icon">
+        <div class="messenger-pulse"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/2048px-Facebook_Messenger_logo_2020.svg.png"
+            alt="Messenger">
+    </a>
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

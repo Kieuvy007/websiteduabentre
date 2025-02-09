@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quản Bá Dừa Bến Tre</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="Logo Dừa Bến Tre" height="50">
+                    <span class="brand-text ms-2">Dừa Bến Tre</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="san-pham.html">Sản phẩm</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tin-tuc.html">Tin tức</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <h1 class="text-center" data-aos="fade-up">
+                Sản Phẩm Của Chúng Tôi
+                <span class="highlight"></span>
+            </h1>
+            <p class="text-center lead" data-aos="fade-up" data-aos-delay="200">
+                Các sản phẩm dừa khô chất lượng cao, đạt tiêu chuẩn xuất khẩu
+                <br>
+                <span class="sub-highlight">Tự hào thương hiệu Bến Tre</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="product-card">
+                        <div class="product-badge">Bán chạy</div>
+                        <div class="product-image">
+                            <img src="images/sp1.jpg" alt="Dừa khô loại 1">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(1)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Loại 1</h3>
+                            <p>Dừa khô nguyên quả, đạt chuẩn xuất khẩu</p>
+                            <div class="product-price">
+                                <span class="current-price">150.000đ</span>
+                                <span class="original-price">180.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Độ ẩm: 45-50%</span>
+                                <span><i class="fas fa-check-circle"></i>Kích thước: 15-17cm</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-badge">Mới</div>
+                        <div class="product-image">
+                            <img src="images/sp2.jpg" alt="Dừa khô loại 2">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(2)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Loại 2</h3>
+                            <p>Dừa khô đã tách vỏ, sẵn sàng chế biến</p>
+                            <div class="product-price">
+                                <span class="current-price">130.000đ</span>
+                                <span class="original-price">150.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Độ ẩm: 40-45%</span>
+                                <span><i class="fas fa-check-circle"></i>Kích thước: 13-15cm</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-badge">Khuyến mãi</div>
+                        <div class="product-image">
+                            <img src="images/sp3.jpg" alt="Dừa khô loại 3">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(3)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Loại 3</h3>
+                            <p>Dừa khô đóng bao, tiện lợi vận chuyển</p>
+                            <div class="product-price">
+                                <span class="current-price">120.000đ</span>
+                                <span class="original-price">140.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Đóng gói: 50kg/bao</span>
+                                <span><i class="fas fa-check-circle"></i>Bảo quản: 6 tháng</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="product-card">
+                        <div class="product-badge">Xuất khẩu</div>
+                        <div class="product-image">
+                            <img src="images/sp4.jpg" alt="Dừa khô đóng kiện">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(4)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Đóng Kiện</h3>
+                            <p>Dừa khô đóng kiện theo tiêu chuẩn xuất khẩu</p>
+                            <div class="product-price">
+                                <span class="current-price">140.000đ</span>
+                                <span class="original-price">160.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Quy cách: 100 trái/kiện</span>
+                                <span><i class="fas fa-check-circle"></i>Đóng gói: Lưới PE</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-badge">Cao cấp</div>
+                        <div class="product-image">
+                            <img src="images/sp5.jpg" alt="Dừa khô cao cấp">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(5)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Cao Cấp</h3>
+                            <p>Dừa khô cao cấp được chọn lọc kỹ càng từ những trái dừa tốt nhất, đảm bảo độ ẩm và kích
+                                thước theo tiêu chuẩn xuất khẩu cao cấp.</p>
+                            <div class="product-price">
+                                <span class="current-price">160.000đ</span>
+                                <span class="original-price">190.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Độ ẩm: 35-40%</span>
+                                <span><i class="fas fa-check-circle"></i>Kích thước: 16-18cm</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                <span><i class="fas fa-check-circle"></i>Chứng nhận: Global GAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-badge">Đặc biệt</div>
+                        <div class="product-image">
+                            <img src="images/sp6.jpg" alt="Dừa khô đặc biệt">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="openProductModal(6)">
+                                    <i class="fas fa-eye"></i>
+                                    Xem Chi Tiết
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dừa Khô Đặc Biệt</h3>
+                            <p>Dừa khô hữu cơ được trồng và chăm sóc theo tiêu chuẩn organic nghiêm ngặt, không sử dụng
+                                phân bón hóa học và thuốc trừ sâu.</p>
+                            <div class="product-price">
+                                <span class="current-price">180.000đ</span>
+                                <span class="original-price">220.000đ</span>
+                            </div>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i>Hữu cơ 100%</span>
+                                <span><i class="fas fa-check-circle"></i>Chứng nhận Organic</span>
+                                <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                <span><i class="fas fa-check-circle"></i>Bảo quản: 12 tháng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-info">
+                            <div class="footer-logo">
+                                <img src="images/logo.png" alt="Logo Dừa Bến Tre" height="60">
+                                <h3>Dừa Bến Tre</h3>
+                            </div>
+                            <p>Chuyên cung cấp dừa khô xuất khẩu chất lượng cao, đảm bảo uy tín và giá cả cạnh tranh
+                                trên thị trường.</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/share/1WTPz3mC3i/" class="facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/vrinz.vie/profilecard/?igsh=MXhmdTlqNnkxZ3Q3bA=="
+                                    class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://youtube.com/@vykieu4125?si=Dp_WaKra5_22Q3Ys" class="youtube"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-contact">
+                            <h4>Thông Tin Liên Hệ</h4>
+                            <div class="contact-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>223/AB, Tiệm Tôm, Ba Tri, Bến Tre</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p>0814375022</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Vrinz.n07@gmail.com </p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Thứ 2 - Thứ 7: 8:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-map">
+                            <h4>Vị Trí Của Chúng Tôi</h4>
+                            <div class="map-wrapper">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62820.79581017576!2d106.3343513092231!3d10.237391859237828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa8f5e2e8bd09%3A0x9d5fd18ce4fa56bb!2zVHAuIELhur9uIFRyZSwgQuG6v24gVHJlLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1738643233012!5m2!1svi!2s"
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2024 Dừa Bến Tre. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-links">
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 0,
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+
+    <!-- Modal Product 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Loại 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp1.jpg" alt="Dừa khô loại 1" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">150.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">180.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô nguyên quả, đạt chuẩn xuất khẩu...</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Độ ẩm: 45-50%</span>
+                                    <span><i class="fas fa-check-circle"></i>Kích thước: 15-17cm</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <button class="btn-add-to-cart" onclick="addToCart(1)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Thêm Vào Giỏ Hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Đánh giá sản phẩm 1 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating1">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings1">(15 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 1 -->
+                        <form id="reviewForm1" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating1">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 1 -->
+                        <div class="reviews-list" id="reviewsList1">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Nguyễn Văn A</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">20/03/2024</div>
+                                <div class="review-content">
+                                    Sản phẩm rất tốt, giao hàng nhanh!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Product 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Loại 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp2.jpg" alt="Dừa khô loại 2" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">130.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">150.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô đã tách vỏ, sẵn sàng chế biến</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Độ ẩm: 40-45%</span>
+                                    <span><i class="fas fa-check-circle"></i>Kích thước: 13-15cm</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-to-cart" onclick="addToCart(2)">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đánh giá sản phẩm 2 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating2">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings2">(8 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 2 -->
+                        <form id="reviewForm2" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating2">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 2 -->
+                        <div class="reviews-list" id="reviewsList2">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Nguyễn Văn B</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">14/03/2024</div>
+                                <div class="review-content">
+                                    Dừa tách vỏ sẵn, rất tiện lợi cho việc chế biến. Chất lượng tốt!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Loại 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp3.jpg" alt="Dừa khô loại 3" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">120.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">140.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô đóng bao, tiện lợi vận chuyển</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Đóng gói: 50kg/bao</span>
+                                    <span><i class="fas fa-check-circle"></i>Bảo quản: 6 tháng</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-to-cart" onclick="addToCart(3)">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đánh giá sản phẩm 3 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating3">4.7</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings3">(12 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 3 -->
+                        <form id="reviewForm3" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating3">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 3 -->
+                        <div class="reviews-list" id="reviewsList3">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Lê Văn C</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">15/03/2024</div>
+                                <div class="review-content">
+                                    Đóng gói cẩn thận, dừa tươi ngon, rất hài lòng!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Đóng Kiện</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp4.jpg" alt="Dừa khô đóng kiện" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">140.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">160.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô đóng kiện theo tiêu chuẩn xuất khẩu</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Quy cách: 100 trái/kiện</span>
+                                    <span><i class="fas fa-check-circle"></i>Đóng gói: Lưới PE</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-to-cart" onclick="addToCart(4)">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đánh giá sản phẩm 4 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating4">4.6</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings4">(10 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 4 -->
+                        <form id="reviewForm4" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating4">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 4 -->
+                        <div class="reviews-list" id="reviewsList4">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Phạm Thị D</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">12/03/2024</div>
+                                <div class="review-content">
+                                    Sản phẩm đạt chuẩn xuất khẩu, rất hài lòng với chất lượng!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Cao Cấp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp5.jpg" alt="Dừa khô cao cấp" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">160.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">190.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô cao cấp được chọn lọc kỹ càng từ những trái dừa tốt nhất, đảm bảo độ ẩm
+                                        và kích thước theo tiêu chuẩn xuất khẩu cao cấp.</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Độ ẩm: 35-40%</span>
+                                    <span><i class="fas fa-check-circle"></i>Kích thước: 16-18cm</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                    <span><i class="fas fa-check-circle"></i>Chứng nhận: Global GAP</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-to-cart" onclick="addToCart(5)">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đánh giá sản phẩm 5 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating5">4.8</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings5">(20 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 5 -->
+                        <form id="reviewForm5" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating5">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 5 -->
+                        <div class="reviews-list" id="reviewsList5">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Nguyễn Thị E</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">10/03/2024</div>
+                                <div class="review-content">
+                                    Sản phẩm đạt chuẩn xuất khẩu, chất lượng tốt, rất hài lòng!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Khô Đặc Biệt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="main-image">
+                                <img src="images/sp6.jpg" alt="Dừa khô đặc biệt" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="price-wrapper mb-3">
+                                    <span class="current-price h3">180.000đ</span>
+                                    <span class="original-price text-muted text-decoration-line-through">220.000đ</span>
+                                </div>
+                                <div class="product-description mb-3">
+                                    <p>Dừa khô hữu cơ được trồng và chăm sóc theo tiêu chuẩn organic nghiêm ngặt, không
+                                        sử dụng phân bón hóa học và thuốc trừ sâu.</p>
+                                </div>
+                                <div class="specs-list mb-4">
+                                    <span><i class="fas fa-check-circle"></i>Hữu cơ 100%</span>
+                                    <span><i class="fas fa-check-circle"></i>Chứng nhận Organic</span>
+                                    <span><i class="fas fa-truck"></i>Giao hàng toàn quốc</span>
+                                    <span><i class="fas fa-check-circle"></i>Bảo quản: 12 tháng</span>
+                                </div>
+                                <div class="quantity-wrapper mb-3">
+                                    <label>Số lượng:</label>
+                                    <div class="quantity-controls">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1">
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-to-cart" onclick="addToCart(6)">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đánh giá sản phẩm 6 -->
+                    <div class="reviews-section mt-4">
+                        <h4>Đánh giá sản phẩm</h4>
+                        <div class="rating-summary">
+                            <div class="average-rating">
+                                <span class="rating-number" id="averageRating6">4.7</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-ratings" id="totalRatings6">(15 đánh giá)</span>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá sản phẩm 6 -->
+                        <form id="reviewForm6" class="review-form">
+                            <div class="rating-input">
+                                <label>Đánh giá của bạn:</label>
+                                <div class="star-rating" id="starRating6">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Bình luận:</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+                        </form>
+
+                        <!-- Danh sách đánh giá sản phẩm 6 -->
+                        <div class="reviews-list" id="reviewsList6">
+                            <!-- Mẫu đánh giá -->
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Trần Thị F</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">05/03/2024</div>
+                                <div class="review-content">
+                                    Sản phẩm đạt chuẩn xuất khẩu, chất lượng tốt, rất hài lòng!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Messenger Icon -->
+    <a href="https://www.facebook.com/share/1BQx5rauJ3/" target="_blank" class="messenger-icon2">
+        <div class="messenger-pulse"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/2048px-Facebook_Messenger_logo_2020.svg.png"
+            alt="Messenger">
+    </a>
+    <!-- Add this before closing body tag -->
+    <script>
+        let currentProductId = null;
+
+        const productData = {
+            1: {
+                id: 1,
+                title: "Dừa Khô Loại 1",
+                price: 150000,
+                mainImage: "images/sp1.jpg"
+            },
+            2: {
+                id: 2,
+                title: "Dừa Khô Loại 2",
+                price: 130000,
+                mainImage: "images/sp2.jpg"
+            },
+            3: {
+                id: 3,
+                title: "Dừa Khô Loại 3",
+                price: 120000,
+                mainImage: "images/sp3.jpg"
+            },
+            4: {
+                id: 4,
+                title: "Dừa Khô Đóng Kiện",
+                price: 140000,
+                mainImage: "images/sp4.jpg"
+            },
+            5: {
+                id: 5,
+                title: "Dừa Khô Cao Cấp",
+                price: 160000,
+                mainImage: "images/sp5.jpg"
+            },
+            6: {
+                id: 6,
+                title: "Dừa Khô Đặc Biệt",
+                price: 180000,
+                mainImage: "images/sp6.jpg"
+            }
+        };
+
+        function openProductModal(id) {
+            const modalId = `productModal${id}`;
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                const bsModal = new bootstrap.Modal(modal);
+                bsModal.show();
+            } else {
+                console.error(`Modal with id ${modalId} not found`);
+            }
+        }
+
+        function addToCart(productId) {
+            // Lấy thông tin sản phẩm từ productData thay vì từ DOM
+            const product = productData[productId];
+            if (!product) {
+                console.error('Không tìm thấy sản phẩm');
+                return;
+            }
+
+            // Lấy số lượng từ modal của sản phẩm cụ thể
+            const modalId = `productModal${productId}`;
+            const quantityInput = document.querySelector(`#${modalId} .qty-input`);
+            if (!quantityInput) {
+                console.error('Không tìm thấy input số lượng');
+                return;
+            }
+
+            const quantity = parseInt(quantityInput.value) || 1;
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            const existingItem = cart.find(item => item.id === productId);
+
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({
+                    id: productId,
+                    title: product.title,
+                    price: product.price,
+                    quantity: quantity,
+                    image: product.mainImage
+                });
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+
+            // Hiển thị thông báo
+            showNotification('Đã thêm vào giỏ hàng!');
+
+            // Đóng modal sản phẩm
+            const modal = document.getElementById(modalId);
+            const modalInstance = bootstrap.Modal.getInstance(modal);
+            if (modalInstance) {
+                modalInstance.hide();
+            }
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <span>${message}</span>
+            `;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 300);
+                }, 2000);
+            }, 100);
+        }
+
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartCount = document.querySelector('.cart-count');
+            if (cartCount) {
+                cartCount.textContent = totalItems;
+            }
+        }
+
+        // Initialize event listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            // Quantity controls in product modal
+            document.querySelectorAll('.qty-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const input = this.parentElement.querySelector('.qty-input');
+                    const currentValue = parseInt(input.value);
+
+                    if (this.classList.contains('minus') && currentValue > 1) {
+                        input.value = currentValue - 1;
+                    } else if (this.classList.contains('plus')) {
+                        input.value = currentValue + 1;
+                    }
+                });
+            });
+        });
+
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+
+        // Khởi tạo biến cho sản phẩm 1
+        let selectedRating1 = 0;
+        const starRating1 = document.querySelector('#starRating1');
+        const stars1 = starRating1.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 1
+        stars1.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars1, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating1 = parseInt(this.dataset.rating);
+                highlightStars(stars1, selectedRating1);
+            });
+        });
+
+        starRating1.addEventListener('mouseleave', function () {
+            highlightStars(stars1, selectedRating1);
+        });
+
+        // Xử lý form đánh giá sản phẩm 1
+        document.getElementById('reviewForm1').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating1 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview1(selectedRating1, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating1 = 0;
+            highlightStars(stars1, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 1
+        function addNewReview1(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList1');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating1();
+        }
+
+        // Sửa hàm getStarIcons
+        function getStarIcons(rating) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                stars += `<i class="fas fa-star${i <= rating ? '' : '-o'}"></i>`;
+            }
+            return stars;
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 1
+        function updateAverageRating1() {
+            const reviewsList = document.querySelector('#reviewsList1');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings1');
+            const averageRatingElement = document.querySelector('#averageRating1');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+
+        // Thêm hàm highlightStars vào đầu phần script
+        function highlightStars(stars, rating) {
+            stars.forEach(star => {
+                const starRating = parseInt(star.dataset.rating);
+                if (starRating <= rating) {
+                    star.classList.remove('far');
+                    star.classList.add('fas');
+                } else {
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                }
+            });
+        }
+
+        // Khởi tạo biến cho sản phẩm 2
+        let selectedRating2 = 0;
+        const starRating2 = document.querySelector('#starRating2');
+        const stars2 = starRating2.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 2
+        stars2.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars2, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating2 = parseInt(this.dataset.rating);
+                highlightStars(stars2, selectedRating2);
+            });
+        });
+
+        starRating2.addEventListener('mouseleave', function () {
+            highlightStars(stars2, selectedRating2);
+        });
+
+        // Xử lý form đánh giá sản phẩm 2
+        document.getElementById('reviewForm2').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating2 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview2(selectedRating2, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating2 = 0;
+            highlightStars(stars2, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 2
+        function addNewReview2(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList2');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating2();
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 2
+        function updateAverageRating2() {
+            const reviewsList = document.querySelector('#reviewsList2');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings2');
+            const averageRatingElement = document.querySelector('#averageRating2');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+
+        // Khởi tạo biến cho sản phẩm 3
+        let selectedRating3 = 0;
+        const starRating3 = document.querySelector('#starRating3');
+        const stars3 = starRating3.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 3
+        stars3.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars3, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating3 = parseInt(this.dataset.rating);
+                highlightStars(stars3, selectedRating3);
+            });
+        });
+
+        starRating3.addEventListener('mouseleave', function () {
+            highlightStars(stars3, selectedRating3);
+        });
+
+        // Xử lý form đánh giá sản phẩm 3
+        document.getElementById('reviewForm3').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating3 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview3(selectedRating3, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating3 = 0;
+            highlightStars(stars3, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 3
+        function addNewReview3(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList3');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating3();
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 3
+        function updateAverageRating3() {
+            const reviewsList = document.querySelector('#reviewsList3');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings3');
+            const averageRatingElement = document.querySelector('#averageRating3');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+
+        // Khởi tạo biến cho sản phẩm 4
+        let selectedRating4 = 0;
+        const starRating4 = document.querySelector('#starRating4');
+        const stars4 = starRating4.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 4
+        stars4.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars4, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating4 = parseInt(this.dataset.rating);
+                highlightStars(stars4, selectedRating4);
+            });
+        });
+
+        starRating4.addEventListener('mouseleave', function () {
+            highlightStars(stars4, selectedRating4);
+        });
+
+        // Xử lý form đánh giá sản phẩm 4
+        document.getElementById('reviewForm4').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating4 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview4(selectedRating4, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating4 = 0;
+            highlightStars(stars4, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 4
+        function addNewReview4(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList4');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating4();
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 4
+        function updateAverageRating4() {
+            const reviewsList = document.querySelector('#reviewsList4');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings4');
+            const averageRatingElement = document.querySelector('#averageRating4');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+
+        // Khởi tạo biến cho sản phẩm 5
+        let selectedRating5 = 0;
+        const starRating5 = document.querySelector('#starRating5');
+        const stars5 = starRating5.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 5
+        stars5.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars5, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating5 = parseInt(this.dataset.rating);
+                highlightStars(stars5, selectedRating5);
+            });
+        });
+
+        starRating5.addEventListener('mouseleave', function () {
+            highlightStars(stars5, selectedRating5);
+        });
+
+        // Xử lý form đánh giá sản phẩm 5
+        document.getElementById('reviewForm5').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating5 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview5(selectedRating5, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating5 = 0;
+            highlightStars(stars5, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 5
+        function addNewReview5(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList5');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating5();
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 5
+        function updateAverageRating5() {
+            const reviewsList = document.querySelector('#reviewsList5');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings5');
+            const averageRatingElement = document.querySelector('#averageRating5');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+
+        // Thêm vào sau phần xử lý sản phẩm 5
+        // Khởi tạo biến cho sản phẩm 6
+        let selectedRating6 = 0;
+        const starRating6 = document.querySelector('#starRating6');
+        const stars6 = starRating6.querySelectorAll('i');
+
+        // Xử lý đánh giá sao cho sản phẩm 6
+        stars6.forEach(star => {
+            star.addEventListener('mouseover', function () {
+                const rating = this.dataset.rating;
+                highlightStars(stars6, rating);
+            });
+
+            star.addEventListener('click', function () {
+                selectedRating6 = parseInt(this.dataset.rating);
+                highlightStars(stars6, selectedRating6);
+            });
+        });
+
+        starRating6.addEventListener('mouseleave', function () {
+            highlightStars(stars6, selectedRating6);
+        });
+
+        // Xử lý form đánh giá sản phẩm 6
+        document.getElementById('reviewForm6').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (selectedRating6 === 0) {
+                alert('Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+
+            const comment = this.querySelector('textarea').value;
+            if (!comment.trim()) {
+                alert('Vui lòng nhập nội dung đánh giá!');
+                return;
+            }
+
+            // Thêm đánh giá mới vào danh sách
+            addNewReview6(selectedRating6, comment);
+
+            // Reset form
+            this.reset();
+            selectedRating6 = 0;
+            highlightStars(stars6, 0);
+            alert('Cảm ơn bạn đã đánh giá sản phẩm!');
+        });
+
+        // Hàm thêm đánh giá mới cho sản phẩm 6
+        function addNewReview6(rating, comment) {
+            const reviewsList = document.querySelector('#reviewsList6');
+            const date = new Date().toLocaleDateString();
+
+            const reviewHTML = `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Khách hàng</span>
+                        <div class="review-stars">
+                            ${getStarIcons(rating)}
+                        </div>
+                    </div>
+                    <div class="review-date">${date}</div>
+                    <div class="review-content">${comment}</div>
+                </div>
+            `;
+
+            reviewsList.insertAdjacentHTML('afterbegin', reviewHTML);
+            updateAverageRating6();
+        }
+
+        // Hàm cập nhật đánh giá trung bình cho sản phẩm 6
+        function updateAverageRating6() {
+            const reviewsList = document.querySelector('#reviewsList6');
+            const reviews = reviewsList.querySelectorAll('.review-item');
+            const totalRatings = document.querySelector('#totalRatings6');
+            const averageRatingElement = document.querySelector('#averageRating6');
+
+            // Cập nhật số lượng đánh giá
+            totalRatings.textContent = `(${reviews.length} đánh giá)`;
+
+            // Tính điểm trung bình
+            let totalStars = 0;
+            reviews.forEach(review => {
+                const filledStars = review.querySelectorAll('.fa-star:not(.fa-star-o)').length;
+                totalStars += filledStars;
+            });
+
+            const average = (totalStars / reviews.length).toFixed(1);
+            averageRatingElement.textContent = average;
+
+            // Cập nhật hiển thị sao trung bình
+            const averageStars = averageRatingElement.parentElement.querySelector('.stars');
+            averageStars.innerHTML = getStarIcons(Math.round(average));
+        }
+    </script>
+
+    <!-- Cart Icon - Update onclick to redirect -->
+    <a href="gio-hang.html" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Khởi tạo tất cả các modal
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                new bootstrap.Modal(modal);
+            });
+        });
+    </script>
+</body>
+
+</html>
